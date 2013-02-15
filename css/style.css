@@ -39,6 +39,23 @@ hr {
   margin: 2em -50em; 
 }
 
+figure {
+  display: block;
+  margin: 0 0 1.25em; 
+  max-width: 38em;
+}
+figcaption {
+  display: block;
+  text-align: center;
+  font-size: 85%;
+  color: #888;
+  padding: 0.75em 0;
+  text-shadow: -1px 1px rgba(255,255,255,0.5);
+  background: rgba(0,0,0,0.04);
+  border-radius: 0.5em;
+  box-shadow: inset 0 0 1em rgba(0,0,0,0.1);
+}
+
 /* Lists */
 ul, ol { margin: 0 0 0 1.75em; padding: 0 0 0.75em; max-width: 38em; }
 ol { list-style-type: decimal; }
@@ -86,6 +103,12 @@ img {
 
 .nowrap { white-space: nowrap; }
 
+.align-right {
+  float: right;
+  margin-left: 1.25em;
+  margin-bottom: 0.5em;
+}
+
 
 /* =Layout & Content
 -------------------------------------------------------------- */
@@ -126,27 +149,14 @@ img {
   color: #ffdabf;
 }
 
-.avatar {
-  width: 50px;
-  height: 50px;
-  background: #999;
-  border: 4px solid #fff;
-  border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  float: left;
-  margin: 0 1.25em 0.5em 0;
-}
 
-.multi-devices {
-/*  width: 273px;
-  height: 80px;*/
-}
+/* =Inline Images
+-------------------------------------------------------------- */
 
 .social-network-icon {
   width: 32px;
   height: 32px;
 }
-
 .iphone {
   width: 198px;
   max-width: 33%;
@@ -157,7 +167,32 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+.picture {
+  border: 4px solid #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  -webkit-transform:rotate(1deg);
+     -moz-transform:rotate(1deg);
+      -ms-transform:rotate(1deg);
+       -o-transform:rotate(1deg);
+          transform:rotate(1deg);
+}
+.picture.landscape {
+  width: 300px;
+}
+.picture.portrait {
+  width: 225px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  background: #999;
+  border: 4px solid #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  float: left;
+  margin: 0 1.25em 0.5em 0;
+}
 .avatar.female {
   -webkit-transform:rotate(-2deg);
      -moz-transform:rotate(-2deg);
@@ -172,6 +207,7 @@ img {
        -o-transform:rotate(2deg);
           transform:rotate(2deg);
 }
+
 
 /* =Media Queries for Responsive Layout
 -------------------------------------------------------------- */
