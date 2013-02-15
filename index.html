@@ -60,12 +60,16 @@
 
     <h4>The Site Design</h4>
     <p>myPhillyRising will be a mobile web app, with a responsive layout. Like this webpage, the components will adjust to any screen size. The interface will be clean and elegant, with appropriate graphic embellishments that render beautifully on all devices.</p>
-    <p><img class="multi-devices" src="images/multi-devices.png"></p>
+    <figure>
+      <img class="multi-devices" src="images/multi-devices.png">
+    </figure>
 
     <p>Design decisions will be driven by user testing. To optimize usability, we&apos;ll get community input on an early beta of the tool.</p>
 
     <p>Users can log into myPhillyRising with their existing social networks. </p>
-    <p><img class="social-network-icon" src="images/facebook-64.png"> <img class="social-network-icon" src="images/twitter-64.png"> <img class="social-network-icon" src="images/google+-64.png"></p>
+    <figure>
+      <img class="social-network-icon" src="images/facebook-64.png"> <img class="social-network-icon" src="images/twitter-64.png"> <img class="social-network-icon" src="images/google+-64.png">
+    </figure>
 
     <p>Depending on needs, myPhillyRising&apos;s interface can be available in multiple languages. If this gets adopted as a feature, we'll need assistance producing the translated versions of the interface text. Shareabouts, one of the core components we're using, already has multiple language support built in.</p>
 
@@ -74,7 +78,10 @@
     <p>Users can filter the map to show only what&apos;s open now, or services by type. Different types of location are shown with different icons on the map.</p>
     <p>Clicking a location reveals more information such as address, contact info, opening hours, other details.</p>
     
-    <p><a href="http://apops.mas.org/"><img class="iphone zoomable" src="images/iphone-pops-find-a-pops.png"><img class="iphone zoomable" src="images/iphone-pops-1penn.png"><img class="iphone zoomable" src="images/iphone-pops-space-details.png"></a></p>
+    <figure>
+      <a href="http://apops.mas.org/"><img class="iphone zoomable" src="images/iphone-pops-find-a-pops.png"><img class="iphone zoomable" src="images/iphone-pops-1penn.png"><img class="iphone zoomable" src="images/iphone-pops-space-details.png"></a>
+      <figcaption>[FIXME] The POPS website OpenPlans built MAS</figcaption>
+    </figure>
 
     <p>The myPhillyRising map will be powered by <a href="http://shareabouts.org/">Shareabouts</a>, an open source mapping platform that uses the Leaflet library for speedy mobile mapping, and Django with PostGIS for a dependable backend. We'll extend the admin interface so PhillyRising staff can edit or upload updated map layers as data changes (we'll work with the staff to figure out the lowest-effort way to do this within the constraints of the project budget).</p>
       
@@ -88,7 +95,10 @@
     
     <p>For myPhillyRising, we'll take the core of Meeting Matters and turn it into a simple meeting info aggregator. Partners can add meetings via the Meeting Matters interface, or by adding a link to an existing iCalendar feed to pull in (this is a new feature we will add specifically for myPhillyRising). The Meeting Matters engine will serve GeoJSON and iCalendar feeds of meeting, locations, and topics for myPhillyRising&mdash;and for other developers to use in their apps.</p>
       
-    <p><img class="screenshot zoomable" src="images/safari-meetingmatters-bikes.png"><img class="screenshot zoomable screenshot-second" src="images/safari-meetingmatters-home.png"></p>
+    <figure>
+      <img class="screenshot zoomable" src="images/safari-meetingmatters-bikes.png"><img class="screenshot zoomable screenshot-second" src="images/safari-meetingmatters-home.png">
+      <figcaption>[FIXME] Meeting Matters makes finind out about mettings easier.</figcaption>
+    </figure>
 
     <p>[diagram of how data will get into Meeting Matters / myPhillyRising?]</p>
 
@@ -98,7 +108,10 @@
     
     <p>Shareabouts already has commenting built in, for people to discuss places. We'll work with project staff to work out what additional features are needed, and whether our proposal structure of conversations organized by neighborhood makes sense. Another option could be to build in Facebook comments, or another service like Disqus.</p>
 
-    <p><img class="screenshot zoomable" src="images/safari-makebrooklynsafer.png"></p>
+    <figure>
+      <img class="screenshot zoomable" src="images/safari-makebrooklynsafer.png">
+      <figcaption>[FIXME] Shareabout conversations allow citizens to have place-based conversations.</figcaption>
+    </figure>
 
     <h4>Points Mean Prizes</h4>
     <p>All activities in the PhillyRising app earn the user points -- checking the app each day, looking up events and places, attending meetings, activity streaks, participating in conversations, sharing places or topics...</p>
@@ -131,9 +144,10 @@
 
     <h3 class="primary-header">Project Process</h3>
 
+<p><img class="picture portrait align-right" src="images/mjumbe.jpg">
+
     <p>OpenPlans will follow our tested development process. We keep improving this process, making it better and better to produce software that meets expectations and comes in on time and budget. The feature list we build will be driven by needs we learn about in the kickoff meeting. From the start, we'll be aggressive about managing scope, for everyone's benefit. Our recommendation from the workshop might involve a change in scope (e.g. taking out discussions), to ensure that <abbr title="Known informally at OpenPlans as 'half, not half-assed'">the tools we build will be effective and robust</abbr>.</p> 
     
-    <p> pic of Mjumbe </p>
     <p>How the project will unfold:</p>
     <ul>
       <li>Kickoff discovery workshop, including paper prototyping with city staff.</li>
