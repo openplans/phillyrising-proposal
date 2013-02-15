@@ -92,7 +92,7 @@ img {
 
 #page {
   overflow: hidden;
-  padding: 0 0.75em;
+  padding: 0 0.75em 3em;
 }
 #site-header {
   background: #6a6a6a;
@@ -175,7 +175,7 @@ img {
 @media only screen and (min-width: 320px) {
 }
 @media only screen and (min-width: 480px) {
-  #page { padding: 0 2em; }
+  #page { padding: 0 2em 4em; }
   h1 { font-size: 3.5em; }
   h2 { font-size: 2.5em; }
   h3 { font-size: 1.75em; }
@@ -194,7 +194,7 @@ img {
 @media only screen and (min-width: 768px) {
 }
 @media only screen and (min-width: 1024px) {
-  #page { padding: 0 8em; }
+  #page { padding: 0 8em 6em; }
   #site-header {
     margin: 0 -10em 2em;
     padding: 2em 10em;
