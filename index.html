@@ -72,13 +72,13 @@
     <h4>Explore What&apos;s Nearby</h4>
     <p>A central features of myPhillyRising is the <strong>Map View</strong>&mdash;it shows community facilities like parks, rec centers, health centers, computer labs, etc. Citizens can use their phone&apos;s GPS to find themselves on the map, to identify facilities nearby.</p>
     <p>Users can filter the map to show only what&apos;s open now, or services by type. Different types of location are shown with different icons on the map.</p>
-    <p>Clicking a location reveals more information - address, contact info, opening hours, other details.</p>
+    <p>Clicking a location reveals more information such as address, contact info, opening hours, other details.</p>
     
     <p><a href="http://apops.mas.org/"><img class="iphone zoomable" src="images/iphone-pops-find-a-pops.png"><img class="iphone zoomable" src="images/iphone-pops-1penn.png"><img class="iphone zoomable" src="images/iphone-pops-space-details.png"></a></p>
 
-    <p>The myPhillyRising map will be powered by <a href="http://shareabouts.org/">Shareabouts</a>&mdash;a responsive, open source mapping platform. Shareabouts already uses the Leaflet library for speedy mobile mapping, and Django with PostGIS for a dependable backend. We'll extend the admin interface so PhillyRising staff can edit or upload updated map layers as data changes (we'll work with the staff to figure out the lowest-effort way to do this within the constraints of the project budget).</p>
+    <p>The myPhillyRising map will be powered by <a href="http://shareabouts.org/">Shareabouts</a>, an open source mapping platform that uses the Leaflet library for speedy mobile mapping, and Django with PostGIS for a dependable backend. We'll extend the admin interface so PhillyRising staff can edit or upload updated map layers as data changes (we'll work with the staff to figure out the lowest-effort way to do this within the constraints of the project budget).</p>
       
-    <p>Data from the Shareabouts API will be provided to the mobile map client using geojson. This is the most efficient way for us to connect myPhillyRising to Shareabouts, but it's also a powerful way to open up PhillyRising map locations to other developers. Using the same feed, multiple clients can use the map data for apps, visualizations, analysis and more. </p> 
+    <p>Data from the Shareabouts API will be provided to the mobile map client using GeoJSON. This is the most efficient way for us to connect myPhillyRising to Shareabouts, but it's also a powerful way to open up PhillyRising map locations to other developers. Using the same feed, multiple clients can use the map data for apps, visualizations, analysis and more. </p> 
 
 
     <h4>Find Activities, Events, &amp; Meetings</h4>
@@ -86,10 +86,9 @@
     
     <p>Event data is powered by <a href="https://github.com/openplans/meetingmatters">Meeting Matters</a>. Frustrated by the weak ecosystem of data around meetings, we created Meeting Matters to make it easier to find out about and attend meetings. People can add meetings to the database, and subscribe to meeting info by tag and location.</p>
     
-    <p>For myPhillyRising, we'll take the core of Meeting Matters and turn it into a simple meeting info aggregator. Partners can add meetings via the Meeting Matters interface, or by adding a link to an existing ical feed to pull in (this is a new feature we will add specifically for myPhillyRising). The Meeting Matters engine will serve GeoJSON and ics feeds of meeting, locations and topics for myPhillyRising - and for other developers to use.</p>
+    <p>For myPhillyRising, we'll take the core of Meeting Matters and turn it into a simple meeting info aggregator. Partners can add meetings via the Meeting Matters interface, or by adding a link to an existing iCalendar feed to pull in (this is a new feature we will add specifically for myPhillyRising). The Meeting Matters engine will serve GeoJSON and iCalendar feeds of meeting, locations, and topics for myPhillyRising&mdash;and for other developers to use in their apps.</p>
       
-
-    <p>[Meeting Matters screenshot]</p>
+    <p><img class="screenshot zoomable" src="images/safari-meetingmatters-bikes.png"><img class="screenshot zoomable screenshot-second" src="images/safari-meetingmatters-home.png"></p>
 
     <p>[diagram of how data will get into Meeting Matters / myPhillyRising?]</p>
 
@@ -105,8 +104,9 @@
     <p>All activities in the PhillyRising app earn the user points -- checking the app each day, looking up events and places, attending meetings, activity streaks, participating in conversations, sharing places or topics...</p>
     <p>Working with the PhillyRising team, we&apos;ll design a simple leaderboard system that&apos;s calibrated for the kind of engagement that the project wants to promote. To design this requires a discussion where we'll explore the value of the points for PhillyRising and the city. For example, users might track their involvement over all time, and see their local status compared to others in the same neighborhood. Top scoring people can win the opportunity to work with city staff on particular local issues, or get to spend time talking to the Mayor.</p>
 
+    <hr>
 
-    <h2>Future expansion</h2>
+    <h3 class="primary-header">Future Expansion</h3>
 
     <p>The ideas in this document are just the start of what we imagine tools like myPhillyRising can do for empowered neighborhoods...</p> 
     <p>The solid layer of open source tools we're proposing makes for a flexible tool in the future. As the underlying tools are improved, myPhillyRising can benefit from these new features.</p>
@@ -120,7 +120,9 @@
     <p><strong>Text message</strong> notifications of events and meetings.</p>
     <p>Add concept of projects/local changes</p>
     
-    <h2>Project process</h2>
+    <hr>
+
+    <h3 class="primary-header">Project Process</h3>
 
     <h4>Project plan</h4>
     Kickoff with the city

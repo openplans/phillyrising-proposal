@@ -204,6 +204,10 @@ img {
     padding: 2em 10em;
   }
   .avatar { margin-left: -2.5em; }
+  .screenshot-second {
+    margin-left: -200px;
+    margin-bottom: 3em;
+  }
   .zoomable {
     -webkit-transition: -webkit-transform .3s ease-in-out;
        -moz-transition: -moz-transform .3s ease-in-out;
