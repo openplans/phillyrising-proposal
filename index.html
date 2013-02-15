@@ -67,13 +67,13 @@
     <p>Users can log in with their existing social networks. </p>
     <p><img class="social-network-icon" src="images/facebook-64.png"> <img class="social-network-icon" src="images/twitter-64.png"> <img class="social-network-icon" src="images/google+-64.png"></p>
 
-    <p>Depending on needs, myPhillyRising&apos;s interface can be available in multiple languages.</p>
+    <p>Depending on needs, myPhillyRising&apos;s interface can be available in multiple languages. If this gets adopted as a feature, we'll need assistance producing the translated versions of the interface text. Shareabouts, one of the core components we're using, already has multiple language support built in.</p>
 
 
     <h4>Explore What&apos;s Nearby</h4>
     <p>A central features of myPhillyRising is the <strong>Map View</strong>&mdash;it shows community facilities like parks, rec centers, health centers, computer labs, etc. Citizens can use their phone&apos;s GPS to find themselves on the map, to identify facilities nearby.</p>
     <p>Users can filter the map to show only what&apos;s open now, or services by type. Different types of location are shown with different icons on the map.</p>
-    <p>Clicking a location reveals details - address, contact info.</p>
+    <p>Clicking a location reveals more information - address, contact info, opening hours, other details.</p>
     
     <p><a href="http://apops.mas.org/"><img class="iphone" src="images/iphone-pops-find-a-pops.png"><img class="iphone" src="images/iphone-pops-1penn.png"><img class="iphone" src="images/iphone-pops-space-details.png"></a></p>
 
@@ -86,7 +86,11 @@
     <h4>Find Activities, Events, &amp; Meetings</h4>
     <p>The <strong>Events View</strong> shows meetings, workshops and other activities. Users can filter by topic or date, click to RSVP for a meeting, see the meeting location on the map, and subscribe to meeting updates.</p>
     
-    <p>The event view is powered by <a href="https://github.com/openplans/meetingmatters">Meeting Matters</a>.
+    <p>Event data is powered by <a href="https://github.com/openplans/meetingmatters">Meeting Matters</a>. Frustrated by the weak ecosystem of data around meetings, we created Meeting Matters to make it easier to find out about and attend meetings. People can add meetings to the database, and subscribe to meeting info by tag and location.</p>
+    
+    <p>For myPhillyRising, we'll take the core of Meeting Matters and turn it into a simple meeting info aggregator. Partners can add meetings via the Meeting Matters interface, or by adding a link to an existing ical feed (this is a new feature we will add). 
+      
+      
     Admin view lets anyone submit an event into the PhillyRising list
     Meeting Matters will serve geojson and ical feeds of meetings, locations and topics.
     Meeting Matters polls existing event feeds (e.g.....) and stores events in the database.
