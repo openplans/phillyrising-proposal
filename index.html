@@ -77,24 +77,24 @@
     <p>A central features of myPhillyRising is the <strong>Map View</strong>&mdash;it shows community facilities like parks, rec centers, health centers, computer labs, etc. Citizens can use their phone&apos;s GPS to find themselves on the map, to identify facilities nearby.</p>
     <p>Users can filter the map to show only what&apos;s open now, or services by type. Different types of location are shown with different icons on the map.</p>
     <p>Clicking a location reveals more information such as address, contact info, opening hours, other details.</p>
-    
+
     <figure>
       <a href="http://apops.mas.org/"><img class="iphone zoomable" src="images/iphone-pops-find-a-pops.png"><img class="iphone zoomable" src="images/iphone-pops-1penn.png"><img class="iphone zoomable" src="images/iphone-pops-space-details.png"></a>
       <figcaption>[FIXME] The POPS website OpenPlans built MAS</figcaption>
     </figure>
 
     <p>The myPhillyRising map will be powered by <a href="http://shareabouts.org/">Shareabouts</a>, an open source mapping platform that uses the Leaflet library for speedy mobile mapping, and Django with PostGIS for a dependable backend. We'll extend the admin interface so PhillyRising staff can edit or upload updated map layers as data changes (we'll work with the staff to figure out the lowest-effort way to do this within the constraints of the project budget).</p>
-      
-    <p>Data from the Shareabouts API will be provided to the mobile map client using GeoJSON. This is the most efficient way for us to connect myPhillyRising to Shareabouts, but it's also a powerful way to open up PhillyRising map locations to other developers. Using the same feed, multiple clients can use the map data for apps, visualizations, analysis and more. </p> 
+
+    <p>Data from Shareabouts will be provided to the mobile map client via a REST API. This is the most efficient way for us to connect myPhillyRising to Shareabouts, but it's also a powerful way to open up PhillyRising map locations to other developers. Using the same feed, multiple clients can use the map data, available in multiple formats including GeoJSON and CSV, for apps, visualizations, analysis and more. </p>
 
 
     <h4>Find Activities, Events, &amp; Meetings</h4>
     <p>The <strong>Events View</strong> shows meetings, workshops and other activities. Users can filter by topic or date, click to RSVP for a meeting, see the meeting location on the map, and subscribe to meeting updates.</p>
-    
+
     <p>Event data is powered by <a href="https://github.com/openplans/meetingmatters">Meeting Matters</a>. Frustrated by the weak ecosystem of data around meetings, we created Meeting Matters to make it easier to find out about and attend meetings. People can add meetings to the database, and subscribe to meeting info by tag and location.</p>
-    
+
     <p>For myPhillyRising, we'll take the core of Meeting Matters and turn it into a simple meeting info aggregator. Partners can add meetings via the Meeting Matters interface, or by adding a link to an existing iCalendar feed to pull in (this is a new feature we will add specifically for myPhillyRising). The Meeting Matters engine will serve GeoJSON and iCalendar feeds of meeting, locations, and topics for myPhillyRising&mdash;and for other developers to use in their apps.</p>
-      
+
     <figure>
       <img class="screenshot zoomable" src="images/safari-meetingmatters-bikes.png"><img class="screenshot zoomable screenshot-second" src="images/safari-meetingmatters-home.png">
       <figcaption>[FIXME] Meeting Matters makes finind out about mettings easier.</figcaption>
@@ -105,7 +105,7 @@
     <h4>Let&apos;s Talk</h4>
 
     <p>myPhillyRising will include simple discussion tools. Citizens can ask a question or make a comment, categorized by the PhillyRising neighborhoods. Using the mobile tool, users can see new questions or comments in their neighborhood, and reply. People can share discussion threads on social media. Staff can reply from an official account and will be able to moderate comments.</p>
-    
+
     <p>Shareabouts already has commenting built in, for people to discuss places. We'll work with project staff to work out what additional features are needed, and whether our proposal structure of conversations organized by neighborhood makes sense. Another option could be to build in Facebook comments, or another service like Disqus.</p>
 
     <figure>
@@ -121,10 +121,10 @@
 
     <h3 class="primary-header">Future Expansion</h3>
 
-    <p>The ideas in this document are just the start of what we imagine tools like myPhillyRising can do for empowered neighborhoods...</p> 
+    <p>The ideas in this document are just the start of what we imagine tools like myPhillyRising can do for empowered neighborhoods...</p>
     <p>The solid layer of open source tools we're proposing makes for a flexible tool in the future. As the underlying tools are improved, myPhillyRising can benefit from these new features.</p>
 
-    <p>The scope for this initial round of work is limited. Here are some ideas we would like to explore for future development -</p> 
+    <p>The scope for this initial round of work is limited. Here are some ideas we would like to explore for future development -</p>
     <ul>
     <li>More advanced discussion features, including <strong>Q&amp;A tools</strong> that build up a collection of answers, like StackOverflow or other tools from the tech world.</li>
     <li>More connections between myPhillyRising and the real world, like a <strong>mobile meeting sign-in tool</strong> that helps event organizers see who's in the room.</li>
@@ -139,28 +139,28 @@
     <h3 class="primary-header">Why OpenPlans?</h3>
 
     <p>OpenPlans builds open source tools for better civic engagement in urban planning, with a special focus on community-led planning.  We are currently working on tools for citizens to be better informed and more empowered to improve their neighborhoods, through our work on Shareabouts, PlanningPress, Meeting Matters, and other tools. In the past, we've explored these issues through OpenBlock, Community Almanac and other projects.</p>
-      
+
     <p>Our Philly-based development team of Aaron Ogle and Mjumbe Poe will lead this project, with NYC-based support from Andrew Cochran, design lead, and Frank Hebbert, team director. As well as being technically capable, we're deeply concerned with the urban issues that PhillyRising sets out to address. We're exploring similar topics through our ongoing partnership with Living Cities, and other community-based groups, and our own projects previously and outside of work.</p>
 
     <h3 class="primary-header">Project Process</h3>
 
 <p><img class="picture portrait align-right" src="images/mjumbe.jpg">
 
-    <p>OpenPlans will follow our tested development process. We keep improving this process, making it better and better to produce software that meets expectations and comes in on time and budget. The feature list we build will be driven by needs we learn about in the kickoff meeting. From the start, we'll be aggressive about managing scope, for everyone's benefit. Our recommendation from the workshop might involve a change in scope (e.g. taking out discussions), to ensure that <abbr title="Known informally at OpenPlans as 'half, not half-assed'">the tools we build will be effective and robust</abbr>.</p> 
-    
+    <p>OpenPlans will follow our tested development process. We keep improving this process, making it better and better to produce software that meets expectations and comes in on time and budget. The feature list we build will be driven by needs we learn about in the kickoff meeting. From the start, we'll be aggressive about managing scope, for everyone's benefit. Our recommendation from the workshop might involve a change in scope (e.g. taking out discussions), to ensure that <abbr title="Known informally at OpenPlans as 'half, not half-assed'">the tools we build will be effective and robust</abbr>.</p>
+
     <p>How the project will unfold:</p>
     <ul>
       <li>Kickoff discovery workshop, including paper prototyping with city staff.</li>
       <li>Design iterations, initially to set up the infrastructure of Shareabouts and Meeting Matters, and then to extend the interface to meet specific needs for the project. Two weeks of development.</li>
-      <li>User testing of the beta with target users and staff, to be lead by the PhillyRising Collaborative (we like a lot of user testing, but the budget for this project is constrained, so we'll look to our project partners and civic tech groups to help kick tires and get the tool into users' hands).</li> 
+      <li>User testing of the beta with target users and staff, to be lead by the PhillyRising Collaborative (we like a lot of user testing, but the budget for this project is constrained, so we'll look to our project partners and civic tech groups to help kick tires and get the tool into users' hands).</li>
       <li>Revisions to the tool, learning from feedback from users, the PhillyRising Collaborative members, and MDO staff. One additional week of development.</li>
       <li>Training and handover, to leave PhillyRising staff equipped to manage the tool.</li>
     </ul>
-    
-    <p>OpenPlans' work on myPhillyRising will be open source, and hosted on GitHub. We will follow our usual open source process: sharing our code, roadmap and bug list from the very start. In coordination with the PhillyRising Collaborative and MDO staff, we'll promote the project and encourage others to re-use it and build on the software and the lessons learned. You can explore <a href="https://github.com/openplans/">all of OpenPlans projects on GitHub</a>. 
+
+    <p>OpenPlans' work on myPhillyRising will be open source, and hosted on GitHub. We will follow our usual open source process: sharing our code, roadmap and bug list from the very start. In coordination with the PhillyRising Collaborative and MDO staff, we'll promote the project and encourage others to re-use it and build on the software and the lessons learned. You can explore <a href="https://github.com/openplans/">all of OpenPlans projects on GitHub</a>.
 
     <h4>Costs</h4>
-    
+
     <p>The total cost of development time for myPhillyRising will be $30,000. This assumes the scope laid out above, with heavy use of existing tools that can be loosely integrated. This cost represents 200 hours of development time, broken down as follows:</p>
     <ul>
       <li>Kickoff workshop and user testing, 40 hours.</li>
@@ -170,7 +170,7 @@
     <li>Points and leaderboard, 24 hours.</li>
     </ul>
     <p>We suggest hosting myPhillyRising on a commercial cloud hosting service, like Heroku or dotCloud. Our cost proposal does not include hosting costs.</p>
-    <p>We suggest engaging us in an ongoing support contract, to provide maintenance, deploys of bug fixes and design tweaks as needs change. Our cost proposal does not include any ongoing support hours after we handover the project. This could be revised, depending on internal capacity at the City and interest in involving us. With or without a support contract, we will continue to engage with the project through the open source community.</p> 
+    <p>We suggest engaging us in an ongoing support contract, to provide maintenance, deploys of bug fixes and design tweaks as needs change. Our cost proposal does not include any ongoing support hours after we handover the project. This could be revised, depending on internal capacity at the City and interest in involving us. With or without a support contract, we will continue to engage with the project through the open source community.</p>
   </div>
 
 
