@@ -22,17 +22,21 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0 0 0.25em 0;
   text-shadow: -1px 1px rgba(255,255,255,0.5);
 }
-h1 { font-size: 3.5em; }
-h2 { font-size: 2.5em; }
-h3 { font-size: 1.75em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.25em; }
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
 h6 { font-size: 1em; }
 
 /* Paragraphs */
 p { 
   margin: 0 0 1.25em; 
   max-width: 38em;
+}
+
+hr { 
+  margin: 2em -50em; 
 }
 
 /* Lists */
@@ -49,9 +53,9 @@ input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { }
 
 /* Text Selection (must be separate declarations) */
-::-moz-selection{ background: DeepPink; color: #fff; text-shadow: none; }
-::selection { background: DeepPink; color: #fff; text-shadow: none; } 
-a:link { -webkit-tap-highlight-color: DeepPink; } 
+::-moz-selection{ background: #ff8b38; color: #fff; text-shadow: none; }
+::selection { background: #ff8b38; color: #fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #ff8b38; } 
 
 /* Images */
 img {
@@ -105,18 +109,45 @@ img {
   margin: 0;
   text-shadow: 1px -1px rgba(0,0,0,0.5);
 }
-#site-title a {
-  text-decoration: none;
-}
-#site-title a:hover {
-  color: LightBlue;
-}
 #site-description {
-  font-size: 1.375em;
+  font-size: 1.25em;
   font-weight: normal;
   text-shadow: 1px -1px rgba(0,0,0,0.5);
 }
+#site-header a {
+  text-decoration: none;
+  color: #eee;
+  border-bottom: 1px solid #ffdabf;
+}
+#site-header a:hover {
+  color: #ffdabf;
+}
 
+.avatar {
+  width: 50px;
+  height: 50px;
+  background: #999;
+  border: 4px solid #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  float: left;
+  margin: 0 1.25em 0.5em 0;
+}
+
+.avatar.female {
+  -webkit-transform:rotate(-2deg);
+     -moz-transform:rotate(-2deg);
+      -ms-transform:rotate(-2deg);
+       -o-transform:rotate(-2deg);
+          transform:rotate(-2deg);
+}
+.avatar.male {
+  -webkit-transform:rotate(2deg);
+     -moz-transform:rotate(2deg);
+      -ms-transform:rotate(2deg);
+       -o-transform:rotate(2deg);
+          transform:rotate(2deg);
+}
 
 /* =Media Queries for Responsive Layout
 -------------------------------------------------------------- */
@@ -125,9 +156,19 @@ img {
 }
 @media only screen and (min-width: 480px) {
   #page { padding: 0 2em; }
+  h1 { font-size: 3.5em; }
+  h2 { font-size: 2.5em; }
+  h3 { font-size: 1.75em; }
+  h4 { font-size: 1.5em; }
+  h5 { font-size: 1.25em; }
+  h6 { font-size: 1em; }
   #site-header {
     margin: 0 -4em 2em;
     padding: 2em 4em;
+  }
+  .avatar {
+    width: 90px;
+    height: 90px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -138,6 +179,7 @@ img {
     margin: 0 -10em 2em;
     padding: 2em 10em;
   }
+  .avatar { margin-left: -2.5em; }
 }
 @media only screen and (min-width: 1300px) {
   body {
