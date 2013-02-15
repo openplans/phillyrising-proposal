@@ -42,8 +42,49 @@
       <h2 id="site-description">A totes awesome proposal by <a href="http://openplans.org/">OpenPlans!</a></h2>
     </header>
 
-    <p class="clearfix"><img class="avatar female" src="images/user-female.png">Tamika lives in North Central. She hears about myPhillyRising on Facebook. Sounds useful&mdash;it&apos;s usually impossible to find out when the Honickman Center is open. She visits myPhillyRising on her HTC Inspire, and she&apos;s impressed by how much information is right there. Finding this on the city website is way too hard, and some of that information is wrong. She checks out the learning center hours, and sees that there&apos;s a drop-in skills clinic event happening next week as well.</p>
+    <p class="clearfix"><img class="avatar female" src="images/user-female.png">Tamika lives in the Johnson Homes at 25th &amp; Norris. She hears about myPhillyRising on Facebook. Sounds useful&mdash;it&apos;s usually impossible to find out when the Honickman Center is open. She visits myPhillyRising on her HTC Inspire, and she&apos;s impressed by how much information is right there. Finding this on the city website is way too hard, and some of that information is wrong. She checks out the learning center hours, and sees that there&apos;s a drop-in skills clinic event happening next week as well.</p>
     <p class="clearfix"><img class="avatar male" src="images/user-male.png">Jim lives in Strawberry Mansion. He&apos;s taking part in the Citizen Engagement Academy when it visits the neighborhood in March. He&apos;s keeping an eye on a few vacant buildings on his block, and some of the sessions with city staff sound useful. After hearing about it at a neighborhood meeting, Jim uses myPhillyRising to check when the academy events are going to be, and other events too. He can also check the location&mdash;tomorrow&apos;s event is at the library on 28th St, ok.</p>
+
+    <hr>
+
+    <h3 class="primary-header">Our Approach</h3>
+    <p>myPhillyRising will provide information that residents need, in a responsive mobile site.  OpenPlans will use user testing to guide design decisions, and work closely with the City's Managing Director's office to understand scope needs. We will build myPhillyRising using existing open source components, to minimize new development of core features like mapping. The components of the site will have APIs, powering the web client but also providing a data resource for other tools. Taking an iterative, open approach to development, we&apos;ll fulfil the needs of the project and set it up for future growth with an open source community.</p>
+
+    <hr>
+
+    <h3 class="primary-header">Features of myPhillyRising</h3>
+    <p>Based on our current understanding of the scope of myPhillyRising, here&apos;s our proposed technical approach and features. At the start of the project, we&apos;ll organize an exploratory design workshop to test some of the assumptions we&apos;re making.</p>
+
+    <h4>The Site Design</h4>
+    <p>myPhillyRising will be a mobile web app, with a responsive layout. Like this webpage, the components will adjust to different device screen sizes. The interface will be clean and elegant, with appropriate graphic embellishments that render beautifully on all devices.</p>
+    <p><img class="multi-devices" src="images/multi-devices.png"></p>
+
+    <p>Design decisions will be driven by user testing. To optimize usability, we&apos;ll get community input on an early beta of the tool.</p>
+
+    <p>Users can log in with their existing social networks. </p>
+    <p><img class="social-network-icon" src="images/facebook-64.png"> <img class="social-network-icon" src="images/twitter-64.png"> <img class="social-network-icon" src="images/google+-64.png"></p>
+
+    <p>Depending on needs, myPhillyRising&apos;s interface can be available in multiple languages.</p>
+
+
+    <h4>Explore What&apos;s Nearby</h4>
+    <p>A central features of myPhillyRising is the <strong>Map View</strong>&mdash;it shows community facilities like parks, rec centers, health centers, computer labs, etc. Citizens can use their phone&apos;s GPS to find themselves on the map, to identify facilities nearby.</p>
+    <p>Users can filter the map to show only what&apos;s open now, or services by type. Different types of location are shown with different icons on the map.</p>
+    <p>Clicking a location reveals details - address, contact info.</p>
+    
+    <p><a href="http://apops.mas.org/"><img class="iphone" src="images/iphone-pops-find-a-pops.png"><img class="iphone" src="images/iphone-pops-1penn.png"><img class="iphone" src="images/iphone-pops-space-details.png"></a></p>
+
+    <p>The myPhillyRising map will be powered by <a href="http://shareabouts.org/">Shareabouts</a>&mdash;a responsive, open source tool, using Leaflet for mapping. The Shareabouts API will provide geojson for the map client, and other developers. Admin interface in the API lets PhillyRising staff edit or upload updated map layers. This may be an extra lift for city staff, so we’re interested in way to reduce this effort for them.</p>
+
+    <h4>Find Activities, Events, &amp; Meetings</h4>
+    <p>The <strong>Events View</strong> shows meetings, workshops and other activities. Users can filter by topic or date, click to RSVP for a meeting, see the meeting location on the map, and subscribe to meeting updates.</p>
+    
+    <p>The event view is powered by <a href="https://github.com/openplans/meetingmatters">Meeting Matters</a>.
+    Admin view lets anyone submit an event into the PhillyRising list
+    Meeting Matters will serve geojson and ical feeds of meetings, locations and topics.
+    Meeting Matters polls existing event feeds (e.g.....) and stores events in the database.
+    The mobile web client uses the Meeting Matters feed. 
+    Other apps can use this feed of meetings.
 
   </div>
 

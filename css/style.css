@@ -12,8 +12,8 @@ body {
 }
 
 /* Links */
-a, a:active, a:visited { color: #00aaff; }
-a:hover { color: #308fbf; }
+a, a:active, a:visited { color: #308fbf; }
+a:hover { color: #00aaff; }
 
 /* Headings */
 h1,h2,h3,h4,h5,h6 { 
@@ -101,12 +101,15 @@ img {
   padding: 1em 2.75em;
   box-shadow: 0 0 10em 10em rgba(255,255,255,0.5), inset 0px 4em 3em 0 rgba(255,255,255,0.125);
 }
-#site-title {
+#site-title, .primary-header {
   font-family: 'Bitter', cursive;
-  font-weight: normal;
+  font-weight: 700;
+}
+#site-title {
   position: relative;
   z-index: 100;
   margin: 0;
+  font-weight: 400;
   text-shadow: 1px -1px rgba(0,0,0,0.5);
 }
 #site-description {
@@ -132,6 +135,23 @@ img {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   float: left;
   margin: 0 1.25em 0.5em 0;
+}
+
+.multi-devices {
+/*  width: 273px;
+  height: 80px;*/
+}
+
+.social-network-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.iphone {
+  width: 198px;
+  max-width: 33%;
+/*  height: 387px;*/
+  height: auto;
 }
 
 .avatar.female {
@@ -180,6 +200,23 @@ img {
     padding: 2em 10em;
   }
   .avatar { margin-left: -2.5em; }
+  .iphone {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+       -moz-transition: -moz-transform .3s ease-in-out;
+        -ms-transition: -ms-transform .3s ease-in-out;
+         -o-transition: -o-transform .3s ease-in-out;
+            transition: transform .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+  }
+  .iphone:hover {
+    z-index: 2;
+    -webkit-transform:scale(2);
+       -moz-transform:scale(2);
+        -ms-transform:scale(2);
+         -o-transform:scale(2);
+            transform:scale(2);
+  }
 }
 @media only screen and (min-width: 1300px) {
   body {
