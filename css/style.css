@@ -177,12 +177,19 @@ img {
        -o-transform:rotate(1deg);
           transform:rotate(1deg);
 }
+.picture.staff {
+  max-width: 25%;
+  margin: 0 -4px;
+}
 .picture.frank {
+  margin-bottom: 8px;
   -webkit-transform:rotate(-1deg);
      -moz-transform:rotate(-1deg);
       -ms-transform:rotate(-1deg);
        -o-transform:rotate(-1deg);
           transform:rotate(-1deg);
+}
+.picture.andy {
 }
 .picture.mjumbe {
   margin-left: -10px;
@@ -191,6 +198,9 @@ img {
       -ms-transform:rotate(-3deg);
        -o-transform:rotate(-3deg);
           transform:rotate(-3deg);
+}
+.picture.aaron {
+  margin-bottom: 15px;
 }
 .picture.landscape {
   width: 300px;
