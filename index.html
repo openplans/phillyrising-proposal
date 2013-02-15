@@ -74,7 +74,11 @@
     
     <p><a href="http://apops.mas.org/"><img class="iphone" src="images/iphone-pops-find-a-pops.png"><img class="iphone" src="images/iphone-pops-1penn.png"><img class="iphone" src="images/iphone-pops-space-details.png"></a></p>
 
-    <p>The myPhillyRising map will be powered by <a href="http://shareabouts.org/">Shareabouts</a>&mdash;a responsive, open source tool, using Leaflet for mapping. The Shareabouts API will provide geojson for the map client, and other developers. Admin interface in the API lets PhillyRising staff edit or upload updated map layers. This may be an extra lift for city staff, so we’re interested in way to reduce this effort for them.</p>
+    <p>The myPhillyRising map will be powered by <a href="http://shareabouts.org/">Shareabouts</a>&mdash;a responsive, open source mapping platform. Shareabouts already uses the Leaflet library for speedy mobile mapping, and Django with PostGIS for a dependable backend. We'll extend the admin interface so PhillyRising staff can edit or upload updated map layers as data changes (we'll work with the staff to figure out the lowest-effort way to do this within the constraints of the project budget).
+      
+      <p>Data from the Shareabouts API will be provided to the map client using geojson. The Shareabouts API will provide geojson for the map client, and other developers. 
+       
+      </p>
 
     <h4>Find Activities, Events, &amp; Meetings</h4>
     <p>The <strong>Events View</strong> shows meetings, workshops and other activities. Users can filter by topic or date, click to RSVP for a meeting, see the meeting location on the map, and subscribe to meeting updates.</p>
